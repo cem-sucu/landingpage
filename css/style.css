@@ -96,15 +96,158 @@ h1 {
   cursor: pointer;
   border-radius: 30px;
 }
-h4{
+
+h4 {
   padding-top: 20px;
   text-align: center;
   font-size: 40px;
 }
-.product p{
+
+.product p,
+.card-textPerson p,
+.card-headerPerson p {
   text-align: center;
   color: #b8b1b1;
   font-size: 20px;
 }
 
-/*page 2*/
+/* TODO page 2*/
+
+.containerCard {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  width: 300px;
+  height: 40%;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: -8px 13px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: radial-gradient(circle, rgba(191, 222, 237, 1) 0%, rgba(72, 152, 189, 1) 100%);
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.card:hover {
+  transform: translate(-1px);
+}
+
+.card-header,
+.card-text {
+  color: #fff;
+}
+
+.card-header i {
+  font-size: 45px;
+
+}
+
+.card-header i:hover {
+  filter: none;
+
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 14px;
+}
+
+/*TODO Page 3*/
+
+.containerPerson {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cardPerson {
+  border-radius: 10px;
+  width: 300px;
+  height: 40%;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardPerson:hover {
+  transform: translate(-1px);
+}
+
+.card-headerPerson {
+  text-align: center;
+
+}
+
+.card-headerPerson img {
+  border-radius: 50%;
+  width: 50%;
+  filter: grayscale(100%);
+  transition: transform 2s ease;
+}
+
+.card-headerPerson img:hover {
+  filter: none;
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.card-textPerson {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-textPerson h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-textPerson p {
+  font-size: 14px;
+}
+
+/*animation du like*/
+
+.network  {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5e15d3;
+  font-size: 20px;
+  opacity: 0.8;
+  transition: all 0.6s;
+
+}
+
+.cardPerson:hover .network {
+  left: 0;
+  transition: 0.6s;
+}
