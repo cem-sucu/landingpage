@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@100;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  background: rgb(191, 222, 237);
+  background: radial-gradient(circle, rgba(191, 222, 237, 1) 0%, rgba(72, 152, 189, 1) 100%);
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  color: #fff;
+}
+
+.menu ul,
+.networks ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu ul li,
+.networks ul li {
+  margin: 10px;
+  display: flex;
+}
+
+.menu li a,
+.networks li a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  width: 80%;
+  padding: 70px;
+
+}
+
+.article {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 1;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+.article p {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+
+.email {
+  background-color: #fff;
+  display: flex;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.email input[type="email"] {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.email button {
+  background-color: #4094b9;
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+h4{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+.product p{
+  text-align: center;
+  color: #b8b1b1;
+  font-size: 20px;
+}
+
+/*page 2*/
