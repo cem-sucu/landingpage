@@ -185,14 +185,13 @@ h4 {
 .cardPerson {
   border-radius: 10px;
   width: 300px;
-  height: 40%;
-  margin: 10px;
+  /* height: 40%; */
+  /* margin: 10px; */
   overflow: hidden;
-  position: relative;
 }
 
 .cardPerson:hover {
-  transform: translate(-1px);
+  transform: translate(0);
 }
 
 .card-headerPerson {
@@ -231,8 +230,6 @@ h4 {
 /*animation des réseaux*/
 
 .network {
-  width: 50px;
-  height: 60px;
   position: absolute;
   top:70px;
   left: -50px;
@@ -246,9 +243,15 @@ h4 {
   transition: all 0.6s;
 
 }
+ 
+.network i{
+  font-size: 15px;
+  cursor: pointer;
+
+}
 
 .cardPerson:hover .network {
-  left: 0;
+  left: 40px;
   transition: 0.6s;
 
 }
